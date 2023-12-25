@@ -123,8 +123,8 @@
         function start() {
             if(inputBar1.value.length == 0) {alert("please input player count");return;}
             gameStarted = true;
-            buttonElement.innerHTML = "Reveal Your Word"
-            buttonElement.style.backgroundColor = "#888888";
+            buttonElement.innerHTML = "Ukaž slovo"
+           buttonElement.style.backgroundColor = "#888888";
             maxPlayers = inputBar1.value;
             logRandom = getRandomLogarithmic(1,100,inputBar2.value)
             impostorCount = calculatePercentage(logRandom,maxPlayers);
@@ -148,7 +148,7 @@
 
         function impostor() {
             buttonElement.style.backgroundColor = "#aa8888";
-            buttonElement.innerHTML = "You Are The Impostor";
+            buttonElement.innerHTML = "Ty slovo nevíš";
         }
 
         function showWord() {
@@ -157,7 +157,7 @@
         }
 
         function backButton() {
-            buttonElement.innerHTML = "Reveal Your Word"
+            buttonElement.innerHTML = "Ukaž slovo"
             buttonElement.style.backgroundColor = "#888888";
             buttonElement.disabled = false;
         }
